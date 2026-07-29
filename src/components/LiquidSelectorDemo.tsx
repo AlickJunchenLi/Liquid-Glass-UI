@@ -49,6 +49,13 @@ export function LiquidSelectorDemo() {
     const containerRect = container.getBoundingClientRect();
     const itemRect = item.getBoundingClientRect();
 
-    
+    const nextTarget: SelectorTarget = {
+      x: itemRect.left - containerRect.left,
+      y: itemRect.top - containerRect.top,
+      width: itemRect.width,
+      height: itemRect.height,
+    };
+
+    targetRef.current = nextTarget;
   }
 }
