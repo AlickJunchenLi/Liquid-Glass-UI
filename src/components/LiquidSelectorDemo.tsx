@@ -44,19 +44,10 @@ export function LiquidSelectorDemo() {
     const container = containerRef.current;
     const item = itemRefs.current[index];
 
-    const targetRef = useRef<SelectorTarget>({
-      x: 0,
-      y: 0,
-      width: 0,
-      height: 0,
-    });
+    if (!container || !item) return;
 
-    const currentRef = useRef<SelectorTarget>({
-      x: 0,
-      y: 0,
-      width: 0,
-      height: 0,
-    });
+    const containerRect = container.getBoundingClientRect();
+    const itemRect = item.getBoundingClientRect();
 
     
   }
