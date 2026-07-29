@@ -57,5 +57,7 @@ export function LiquidSelectorDemo() {
     };
 
     targetRef.current = nextTarget;
+
+    if (immediate) currentRef.current = nextTarget;
   }
 }
