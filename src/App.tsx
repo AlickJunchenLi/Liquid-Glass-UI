@@ -7,12 +7,16 @@ function App() {
         We are building an interactive glass selector step by step.
       </p>
 
-      <nav aria-label="Design stages">
-        <button type="button">Explore</button>
-        <button type="button">Design</button>
-        <button type="button">Build</button>
-        <button type="button">Launch</button>
-      </nav>
+      <section className="selector-stage">
+        <div className="selector" aria-hidden="true" />
+
+        <nav aria-label="Design stages">
+          <button type="button">Explore</button>
+          <button type="button">Design</button>
+          <button type="button">Build</button>
+          <button type="button">Launch</button>
+        </nav>
+      </section>
     </main>
   );
 }

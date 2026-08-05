@@ -1,3 +1,4 @@
+/*
 import {
   CSSProperties, 
   PointerEvent as ReactPointerEvent, 
@@ -61,3 +62,4 @@ export function LiquidSelectorDemo() {
     if (immediate) currentRef.current = nextTarget;
   }
 }
+  */

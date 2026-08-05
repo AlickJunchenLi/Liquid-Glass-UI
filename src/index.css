@@ -39,10 +39,43 @@ button {
   cursor: pointer;
   transition:
     transform 180ms ease,
-    background-color 180ms ease;
+    background 180ms ease;
 }
 
 button:hover {
   transform: translateY(-3px);
   background: #d9f8ff;
+}
+
+.selector-stage {
+  position: relative;
+  display: inline-block;
+  margin-top: 24px;
+}
+
+.selector-stage nav {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+}
+
+.selector {
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+  height: 44px;
+  border: 0px solid rgba(255, 255, 255, 0.9);
+  border-radius: 999px;
+  background: transparent;
+  pointer-events: none;
+}
+
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
 }
